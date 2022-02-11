@@ -19,7 +19,7 @@ def init():
 
 @cli.command()
 @click.option(
-    '-s', '--system',
+    '-e', '--engine',
     required=True,
     type=click.Choice(['redshift', 'snowflake', 'bigquery', 'postgres', 'mysql'])
 )
