@@ -31,7 +31,7 @@ setup(
         where="src",
     ),
     install_requires=[
-        'Click',
+        'click>=8',
     ],
     entry_points={
         'console_scripts': [
