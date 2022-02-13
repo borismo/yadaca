@@ -23,6 +23,6 @@ def init():
     required=True,
     type=click.Choice(['redshift', 'snowflake', 'bigquery', 'postgres', 'mysql'])
 )
-def push(system: str):
-    """Get metadata from one of your data systems and push to your data catalog."""
-    click.echo(f'Pushed {system} metadata')
+def refresh(system: str):
+    """Get metadata from one of your data systems and push it to your data catalog."""
+    click.echo(f'Refreshed {system} metadata')
