@@ -11,3 +11,10 @@ tables don't need to be inspected. Metadata extraction can be part of a data pip
 
 HTML files are generated as a result and can be hosted in cloud storage service for a serverless solution or in a
 traditional web server
+
+# Develop
+Clone this repository, create and activate a virtual environment, and install the package with
+```bash
+pip install --editable .
+```
+Does the command below print the version without blowing up? Then congrats, you're good to go.
