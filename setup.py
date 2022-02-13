@@ -32,6 +32,7 @@ setup(
     ),
     install_requires=[
         'click>=8',
+        'SQLAlchemy>=1.4',
     ],
     entry_points={
         'console_scripts': [
