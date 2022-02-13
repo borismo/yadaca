@@ -1,5 +1,5 @@
 import click
-
+import yadaca.commands.refresh
 
 @click.group()
 @click.version_option()
@@ -23,6 +23,7 @@ def init():
     required=True,
     type=click.Choice(['redshift', 'snowflake', 'bigquery', 'postgres', 'mysql'])
 )
-def refresh(system: str):
+def refresh(engine: str):
     """Get metadata from one of your data systems and push it to your data catalog."""
-    click.echo(f'Refreshed {system} metadata')
+    click.echo(f'Refreshed {engine} metadata')
+    yadaca.commands.refresh.run()
